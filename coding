@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym&fitness</title>
+
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 0px;
+        background: url('gym_girl1.jpg');
+        height: 1200px;
+        width: 1000px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 1px solid red; */
+        /* position: absolute; */
+        position: fixed;
+
+    }
+
+    img {
+        margin-left: 15px;
+        width: 90px;
+        height: 50px;
+    }
+
+    .left div {
+        margin: 0px;
+        text-decoration: 34px;
+        text-align: center;
+
+    }
+
+    .mid {
+        display: block;
+        width: 65%;
+        /* margin: 15px auto; */
+        /* position: fixed; */
+        /* top: 10px;
+        left: 50%; */
+        margin: 15px 280px;
+        /* border: 1px solid darkblue; */
+        font-size: 0px;
+    }
+
+    .navbar {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 15px;
+        border: 2px solid rgb(53, 50, 50);
+        border-radius: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        background-color: rgb(190, 238, 102);
+        color: cadetblue;
+    }
+
+    .right {
+        position: absolute;
+        right: 24px;
+        display: inline-block;
+        top: 10px;
+        /* border: 1px solid green; */
+        margin-top: 10px;
+        position: fixed;
+    }
+
+    .btn {
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 3px 4px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .btn:hover {
+        background-color: yellowgreen;
+    }
+
+    .container {
+        /* border: 2px solid darkolivegreen; */
+        margin-top: 90px;
+        padding: 0px;
+        margin-left: 30px;
+    }
+
+    .container h1 {
+        display: block;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .form {
+        display: block;
+        border: 2px solid white;
+        border-radius: 6px;
+        /* text-align: center; */
+        margin-top: 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 550px;
+        margin-left: 240px;
+    }
+
+    .form h3 {
+        text-align: center;
+    }
+
+    .form p {
+        display: inline;
+        margin-left: 5px;
+    }
+
+    #fname {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 170px;
+    }
+
+    #midname {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 170px;
+    }
+
+    #lastname {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 170px;
+    }
+
+    #age {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 170px;
+    }
+
+    #male {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #female {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #butn{
+        display: block;
+    }
+    #butn button{
+        margin: 5px;
+        padding-left: 10px;
+        border: 2px solid rgb(190, 238, 102);
+        border-radius: 10px;
+    }
+    #submit{
+        margin-left: 250px;
+    }
+    .form button:hover {
+        cursor: pointer;
+        background-color: navy;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- this is left.for logo -->
+        <div class="left">
+            <img src="gym-gada4d84b8_1280.png" alt="">
+            <div> Fitness world</div>
+        </div>
+        <!-- this is for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">registration</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">Feed back</a></li>
+            </ul>
+        </div>
+        <!-- this is for btn -->
+        <div class="right">
+            <button class="btn">email us</button>
+            <button class="btn">follow</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1> WELCOME TO FITNESS WORLD </h1>
+    </div>
+    <div class="form">
+        <h3>Registration Form</h3>
+        <input type="text" id="fname" placeholder="Enter your first name">
+        <input type="text" id="midname" placeholder="Enter your mid name">
+        <input type="text" id="lastname" placeholder="Enter your sur name">
+        <input type="text" id="age" placeholder="Enter your age">
+        <p>Select your gender :</p>
+        <input type="radio" name="Gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="female">
+        <label for="female">Female</label>
+        <div class="butn">
+            <button>Preview</button>
+            <button id="submit">submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
