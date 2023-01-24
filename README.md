@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @sandeep908
+- 👋 Hi, I’m Sandeep Kumar Singh
 - 👀 I’m interested in web development(front end).
-- 🌱 I’m currently learning java script and python for backend .
-- 💞️ I’m looking to collaborate on ...
+- 🌱 I’m currently learning java script for backend .
+- 💞️ I’m looking to collaborate on LinkedIn.
 - 📫 How to reach me .
 
 <!---
